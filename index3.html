@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meliê Doces Gourmet</title>
+    <link rel="icon" href="./imagens/Made with insMind-melie_logo.png" type="image/x-icon">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    html{
+        background-color: rgb(255, 244, 224);
+    }
+
+    @font-face{
+        font-family: "rochester";
+        src: url(/font/rochester/Rochester-Regular.ttf)
+    }
+
+    /* INICIO */
+
+    h1{
+        color: black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 7%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    img{
+        width: 200px;
+    }
+
+    .content-cards-produto{
+        text-align: center;
+    }
+
+    .card-produto{
+        width: 200px;
+        height: 330px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 25px;
+        background-color: white;
+        display: inline-block;
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        margin-top: 20px;
+        transition: all 0.9s;
+    }
+
+    .card-produto img{
+        width: 200px;
+        height: 230px;
+        border-top-left-radius: 20px;
+        border-bottom: solid 1px rgb(233, 225, 225);
+    }
+
+    .card-produto :hover{
+        box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .body-card-produto h3{
+        font-family: "rochester";
+        font-size: 22px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 25ch;
+        margin: 5px;
+        margin-top: 12px;
+    }
+
+    .body-card-produto label{
+        font-size: 16px;
+        color: rgb(221, 26, 26);
+        font-weight: bold;
+        margin: 5px;
+    }
+
+    .body-card-produto span{
+        color: rgb(179, 168, 168);
+        font-size: 14px;
+        margin: 5px;
+        text-decoration: line-through;
+    }
+
+    .body-card-produto button{
+        margin-top: 8px;
+        width: 100%;
+        background-color: rgb(8, 141, 8);
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 8px;
+        border: none;
+        box-shadow: 0px 5px 0px rgb(11, 106, 11);
+    }
+
+    .body-card-produto button:hover{
+        cursor: pointer;
+        background-color: rgb(16, 114, 16);
+        box-shadow: 0px 5px 0px rgb(10, 82, 10);
+
+    }
+
+    .body-card-produto button:active{
+        position: relative;
+        top: 5px;
+        box-shadow: none;
+    }
+
+    /* NavBar */
+    nav{
+        background-color: rgb(217, 157, 94);
+        padding: 25px;
+        width: 100vw;
+        position: fixed;
+        margin-bottom: 150px;
+    }
+    nav .a-link{
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        margin-right: 5px;
+    }
+    nav img{
+        width: 50px;
+        position: fixed;
+        top: 0;
+        padding: 10px;
+    }
+
+    .links{
+        text-align: right;
+    }
+
+    .ultimo-link{
+        margin-right: 35px;
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .a-link:hover{
+        background-color: rgb(121, 80, 52);
+        padding-bottom: 25px;
+        padding-top: 26px;
+        color: black
+    }
+
+    .ultimo-link:hover{
+        background-color: rgb(121, 80, 52);
+        padding-bottom: 25px;
+        padding-top: 26px;
+        color: black
+    }
+
+    .footer{
+        background-color: rgb(217, 157, 94);
+        padding: 50px;
+        margin-top: 10%;
+    }
+
+    .alinha-footer{
+        text-align: center;
+    }
+
+    .alinha-footer p{
+        background-color: 
+    }
+
+    .footer img{
+        width: 20px;
+    }
+    
+</style>
+<body>
+    <header>
+        <nav>
+           <a class="a-img" href="/index.html"><img src="/imagens/Made with insMind-melie_logo.png" alt="img" type="image/png"></a>
+            <div class="links">
+                <a href="/index.html" class="a-link">Página 1</a>
+                <a href="/index2.html" class="a-link">Página 2</a>
+                <a href="/index3.html" class="ultimo-link">Página 3</a>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <h1>MELIÊ DOCES GOURMET</h1>
+    </div>
+
+    <div class="container">
+       <section>
+            <div class="content-cards-produto">
+                <div class="card-produto">
+                    <img src="/imagens/bolacha de maizena.jpg">
+                    <div class="body-card-produto">
+                        <h3>Bolacha de Maizena</h3>
+                        <p>
+                            <span>R$20,00</span><!--Preço do produto-->
+                            <label>R$15,00</label><!--Preço promocional-->
+                        </p>
+                        <button type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <section>
+            <div class="content-cards-produto">
+                <div class="card-produto">
+                    <img src="/imagens/brigadeiros.png">
+                    <div class="body-card-produto">
+                        <h3>Brigadeiro</h3>
+                        <p>
+                            <span>R$20,00</span><!--Preço do produto-->
+                            <label>R$15,00</label><!--Preço promocional-->
+                        </p>
+                        <button type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <section>
+            <div class="content-cards-produto">
+                <div class="card-produto">
+                    <img src="/imagens/brownie recheado.jpeg">
+                    <div class="body-card-produto">
+                        <h3>Brownie Recheado</h3>
+                        <p>
+                            <span>R$20,00</span><!--Preço do produto-->
+                            <label>R$15,00</label><!--Preço promocional-->
+                        </p>
+                        <button type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <section>
+            <div class="content-cards-produto">
+                <div class="card-produto">
+                    <img src="/imagens/brownie.jpeg">
+                    <div class="body-card-produto">
+                        <h3>Brownie</h3>
+                        <p>
+                            <span>R$20,00</span><!--Preço do produto-->
+                            <label>R$15,00</label><!--Preço promocional-->
+                        </p>
+                        <button type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <section>
+            <div class="content-cards-produto">
+                <div class="card-produto">
+                    <img src="/imagens/cone trufado.jpeg">
+                    <div class="body-card-produto">
+                        <h3>Cone Trufado</h3>
+                        <p>
+                            <span>R$20,00</span><!--Preço do produto-->
+                            <label>R$15,00</label><!--Preço promocional-->
+                        </p>
+                        <button type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <section>
+            <div class="content-cards-produto">
+                <div class="card-produto">
+                    <img src="/imagens/cookie.jpeg">
+                    <div class="body-card-produto">
+                        <h3>Cookie</h3>
+                        <p>
+                            <span>R$20,00</span><!--Preço do produto-->
+                            <label>R$15,00</label><!--Preço promocional-->
+                        </p>
+                        <button type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <section>
+            <div class="content-cards-produto">
+                <div class="card-produto">
+                    <img src="/imagens/copo da felicidade.jpeg">
+                    <div class="body-card-produto">
+                        <h3>Copo da Felicidade</h3>
+                        <p>
+                            <span>R$20,00</span><!--Preço do produto-->
+                            <label>R$15,00</label><!--Preço promocional-->
+                        </p>
+                        <button type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <section>
+            <div class="content-cards-produto">
+                <div class="card-produto">
+                    <img src="/imagens/pao de mel.jpeg">
+                    <div class="body-card-produto">
+                        <h3>Pão de Mel</h3>
+                        <p>
+                            <span>R$20,00</span><!--Preço do produto-->
+                            <label>R$15,00</label><!--Preço promocional-->
+                        </p>
+                        <button type="button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+       </section>
+       
+    </div>
+
+    <footer class="footer">
+        <div class="alinha-footer">
+            <p>Contatos</p>
+            <p><img src="/imagens/whatsapp.png" type="icon"> (14) 99612-4073</p> 
+            <p><img src="/imagens/instagram.png"> melie_docesgourmet</p>
+            <p>&copy; 2025. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
